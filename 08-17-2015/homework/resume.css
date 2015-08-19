@@ -17,7 +17,7 @@ body {
 }
 
 a {
-	font-family: helvetica neue, helvetica, sans-serif; 
+	font-family: "helvetica neue", helvetica, sans-serif; 
 	color:#fff;
 	text-decoration:underline;
 }
@@ -28,7 +28,7 @@ a:hover {
 
 ul, li {
 	list-style-type: none;
-	font-family: helvetica neue, helvetica, sans-serif; 
+	font-family: "helvetica neue", helvetica, sans-serif; 
 }
 
 li.end {
@@ -41,7 +41,7 @@ li a{
 }
 
 p{
-	font-family: helvetica neue, helvetica, sans-serif; 
+	font-family: "helvetica neue", helvetica, sans-serif; 
 	font-size:19px;
 	line-height:1.2;
 	margin: 0;
