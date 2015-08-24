@@ -1,0 +1,129 @@
+
+
+.title {
+color: #FFF;
+font-weight:none;
+}
+
+.name {
+	color:white;
+}
+
+body.sad {
+	background-color: #fff;
+	color:#000;
+}
+
+body.happy{
+	background-color:#000;
+	color: #fff;
+}
+
+a.sad {
+	font-family: Times, Serif;
+	color:#000;
+	text-decoration:none;
+}
+
+a.happy {
+	font-family: Times, Serif;
+	color:#fff;
+	text-decoration:none;
+}
+
+a:hover { 
+    padding-bottom:3px;
+    border-bottom:1px;
+}
+
+ul, li {
+	list-style-type: none;
+	font-family: Times, Serif
+}
+
+li.end {
+	padding-bottom:10px;
+}
+
+li a{
+	color: #B8B8B8;
+	text-decoration:none;
+}
+
+p{
+	font-family: Times, Serif;
+	font-size:19px;
+	line-height:1.2;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+header h1{
+	font-weight:normal;
+	font-size:500px;
+	line-height:none;
+	margin: 0;
+    padding: 0 0 0 0;
+    border: 0;
+    outline: 0;
+    letter-spacing:-50px;
+}
+
+header h2{
+	font-weight:normal;
+	font-size:400px;
+	line-height:none;
+	margin: 0;
+    padding: 0 0 0 0;
+    border: 0;
+    outline: 0;
+    letter-spacing:-40px;
+}
+
+header h3{
+	font-weight:normal;
+	font-size:300px;
+	line-height:none;
+	margin: 0;
+    padding: 0 0 0 0;
+    border: 0;
+    outline: 0;
+    letter-spacing:-30px;
+}
+
+header h4{
+	font-weight:normal;
+	font-size:200px;
+	line-height:none;
+	margin: 0;
+    padding: 0 0 0 0;
+    border: 0;
+    outline: 0;
+    letter-spacing:-20px;
+}
+
+header h5{
+	font-weight:normal;
+	font-size:100px;
+	line-height:none;
+	margin: 0;
+    padding: 0 0 0 0;
+    border: 0;
+    outline: 0;
+    letter-spacing:-10px;
+}
+
+header h6{
+	font-weight:normal;
+	font-size:50px;
+	line-height:none;
+	margin: 0;
+    padding: 30px;
+    border: 0;
+    outline: 0;
+    letter-spacing:-5px;
+}
+
+
