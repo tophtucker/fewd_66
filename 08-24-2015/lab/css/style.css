@@ -1,0 +1,44 @@
+.img-one { 
+	background-image:url('https://placeimg.com/1000/1000/nature');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	height:400px;
+	width:100%;
+	margin-bottom:5px;
+}
+
+.forest img {
+	max-width:100%;
+}
+
+
+.img-mini{
+	max-width:100px;
+}
+
+section h1{
+	padding-top:50px;
+}
+
+h1{
+	padding-top:10px;
+	border-top: solid 2px blue;
+	margin:0px;
+}
+
+footer ul li{
+	display:inline-block;
+	margin:0px;
+
+}
+
+footer {
+	padding-top:10px;
+	border-top: solid 10px #000;
+}
+
+body {
+	font-family:Helvetica, sans-serif;
+	margin:0;
+}
