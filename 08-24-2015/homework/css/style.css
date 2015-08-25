@@ -1,0 +1,258 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  list-style-type:circle;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin:0;
+  height: 500px;
+
+}
+
+header {
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:400px;
+  width:100%;
+  margin-bottom:5px;
+
+}
+
+footer {
+  background-color:#121212;
+  margin:0;
+  height:200px;
+  width:100%;
+  text-align:center;
+}
+
+}
+
+section {
+  background-color:#f0efef;
+  margin:0;
+  height:600px;
+  width:100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo{
+  padding-top:24px;
+  padding-left:10%;
+  text-align:left;
+  float:left;
+  font-weight:800;
+  color:#fff;
+  font-size:24px;
+  margin:0;
+}
+
+.logo2{
+  padding-top:24px;
+  font-weight:800;
+  color:#f9e42e;
+  font-size:24px;
+  margin:0;
+}
+
+header h2 {
+  padding-top:150px;
+  padding-bottom:30px;
+  font-weight:300;
+  font-size:24px;
+  color:#fff;
+}
+
+header h1{
+  color:#033048;
+  font-size:20px;
+  text-align:left;
+  padding-top:24px;
+  padding-left:10%;
+  font-weight:600;
+}
+
+section h1{
+  color:#033048;
+  font-size:20px;
+  text-align:left;
+  padding-top:24px;
+  padding-left:10%;
+  font-weight:600;
+}
+
+section h2 {
+  text-align:left;
+  padding-top:15px;
+  padding-bottom:10px;
+  padding-left:15%;
+  font-weight:300;
+  font-size:13px;
+  color:#606161;
+  line-height:1.3;
+  width:80%;
+}
+
+section ul {
+  padding-left:20%;
+  padding-bottom:30px;
+  list-style-type:circle;
+}
+
+
+section.testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size:cover;
+  background-position:center;
+  height:250px;
+  width:100%;
+  margin-bottom:5px;
+  padding-top:50px;
+}
+
+section p{
+  text-align:center;
+  padding-top:8px;
+  font-size:18px;
+  color:#fff;
+  font-weight:300;
+  font-style:italic;
+  line-height:1.4;
+}
+
+section div{
+  padding-right: 20%;
+  padding-left: 20%;
+  font-size:18px;
+  text-align:center;
+  font-weight:600;
+  color:#fff;
+}
+
+section.signup {
+  background-color:#f9e42e;
+  height:80px;
+  width:100%;
+  margin-bottom:5px;
+  padding-top:20px;
+
+}
+
+a.one{
+  background-color:#f9e42e;
+  color:#033048;
+  width:150px;
+  padding:10px;
+  text-decoration:none;
+  text-transform:none;
+  display:inline-block;
+  text-align:center;
+  border-radius: 5px;
+  font-size:14px;
+  font-weight:bolder;
+  
+}
+
+a.two{
+  background-color:#033048;
+  color:#f9e42e;
+  width:150px;
+  padding:10px;
+  text-decoration:none;
+  text-transform:none;
+  display:inline-block;
+  text-align:center;
+  border-radius: 5px;
+  font-size:14px;
+  font-weight:bolder;  
+}
+
+
+footer h1{
+  color:#f9e42e;
+  font-size:24px;
+  text-align:center;
+  padding-top:24px;
+  font-weight:800;
+  display:inline-block;
+}
+
+footer p{
+  color:#fff;
+  font-size:9px;
+  text-align:center;
+  padding-top:10px;
+  font-weight:600;
+}
+
+
+footer img{
+  padding:1px;
+  margin-top:10px;
+  text-align:center;
+  vertical-align:center;
+  clear:both;
+  max-width:10%;
+  max-height:10%;
+}
