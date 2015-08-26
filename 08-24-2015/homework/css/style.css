@@ -33,12 +33,12 @@ Developer @GA in NYC
 
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0; /* note the padding around a right floated image */
 }
 
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0; /* note the padding around a left floated image */
 }
 
 /******************************************
@@ -49,7 +49,6 @@ body {
   text-align:center;
   font-family: 'Open Sans', sans-serif;
   margin:0;
-  list-style-type:circle;
 }
 
 
@@ -62,7 +61,6 @@ body {
   width: 100%;
   margin:0;
   height: 500px;
-
 }
 
 header {
