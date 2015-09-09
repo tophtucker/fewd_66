@@ -62,13 +62,13 @@ body {
 /*******************************************/
 
 /* Center the container */
-#container {
-  width: 960px;
+main{
+  max-width: 960px;
   margin: auto;
 }
 
 .hed{
-  width:80%;
+  max-width:960px;
   margin:auto;
 }
 
