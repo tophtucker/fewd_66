@@ -145,7 +145,6 @@ footer img{
 .navigation{
   float:right;
   display:flex;
-  width:70%;
 }
 
 nav a{
@@ -153,6 +152,8 @@ nav a{
   color:#f9e42e;
   font-size:20px;
   text-decoration: none;
+  padding:15px;
+  margin-top:15px;
 }
 
 h1{
@@ -177,7 +178,6 @@ a.two{
 .content {
     height:1450px;
     display:flex;
-    justify-content: space-between;
   }
 
 
@@ -209,7 +209,7 @@ main{
 }
 
 aside {
-  width:180px;
+  width:200px;
   padding-left:10px;
 }
 
