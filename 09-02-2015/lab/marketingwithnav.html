@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flex Laoyut: Three Column</title>
+	<style>
+	* { 
+			box-sizing:border-box;
+			list-style:none;
+		}
+	
+	.box {
+		background-color:#cecece;
+		margin:20px 0;
+		padding:15px;
+	}
+	
+	.navigation, .secondary {
+		display:flex;
+	}
+
+	.logo {
+		float:left;
+		width:20%;
+		height:100px;
+	}
+
+	.navigation {
+		float:right;
+		width:70%;
+
+	}
+
+	.primary {
+		clear:both;
+		height:300px;
+	}
+
+	.secondary {
+		height:200px;
+		display:flex;
+		justify-content: space-between;
+	}
+
+	article {
+		width: calc(33.333% - 15px);
+		background-color:red;
+	}
+
+	header,
+	footer {
+		height:100px;
+	}
+
+	body {
+		width:80%;
+		margin:auto;
+	}
+
+	ul {
+		display:flex;
+		justify-content: space-between;
+	}
+
+	li {
+		background-color:#cecece;
+		width: calc(25% - 15px);
+		height:100px;
+		padding:15px;
+	}
+	
+
+	</style>
+
+</head>
+
+	<header>
+		<div class="box logo">logo</div>
+		<nav>
+			<ul class="navigation">
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+				<li>Forth</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="box primary">
+		main section
+	</main>
+
+	<section class="secondary">
+		<article>
+			One 
+		</article>
+		<article>
+			Two
+		</article>
+		<article>
+			Three
+		</article>
+	</section>
+
+	<footer class="box">
+		Footer
+	</footer>

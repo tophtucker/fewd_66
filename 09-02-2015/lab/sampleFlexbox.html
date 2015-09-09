@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flex Laoyut: Two Column</title>
+	<style>
+		* { box-sizing:border-box;
+		}
+
+		header,
+		footer {
+			width:100%;
+			height:200px;
+			margin:15px 0;
+		}
+
+		.box{
+			background-color:#cecece;
+			padding:15px;
+			overflow:auto;
+
+		}
+
+		main {
+			display:flex;
+			justify-content: space-between;
+			height:300px;
+
+		}
+		main section {
+			width: calc(60% - 15px);
+		}
+		main aside {
+			width: calc(20% - 15px);
+		}
+	</style>
+
+</head>
+
+<body>
+  
+	<h1>Flex Layout: Two Column</h1>
+	<header class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptas enim quasi dolore earum id aliquam sunt fugit unde voluptatum dignissimos, odio rem tempore architecto aperiam dicta. Ducimus quaerat, quidem.
+	</header>
+
+	<main>
+		<aside class="box">
+			Aside left
+		</aside>
+
+		<section class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, facere maxime itaque dolor nobis aspernatur placeat deleniti quisquam numquam, neque eius ex dolorum, iste. Dignissimos laboriosam tempore laborum aliquam, ex.
+		</section>
+
+		<aside class="box">
+			Aside right
+		</aside>
+	</main>
+
+	<footer class="box">
+		Footer
+	</footer>
+</body>
+</html>

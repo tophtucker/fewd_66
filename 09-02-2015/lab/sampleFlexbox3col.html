@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flex Laoyut: Three Column</title>
+	<style>
+		* { 
+			box-sizing:border-box;
+		}
+
+		//header,
+		//footer {
+			width:100%;
+			height:200px;
+			margin:15px 0;
+		}
+
+		//.box{
+			background-color:#cecece;
+			padding:15px;
+			overflow:auto;
+
+		}
+
+		//main {
+			display:flex;
+			justify-content: space-between;
+			height:300px;
+		}
+
+		//main section {
+			width: calc(50% - 15px);
+		}
+		//main aside {
+			width: calc(50% - 15px);
+		}
+
+		header,
+		footer {
+			background-color:#cecece;
+			height:160px;
+			margin:15px 0 15px 0;
+			padding:15px;
+
+		}
+
+		.primary,
+		.secondary  {
+			display:flex;
+			justify-content:space-between;
+			height: 220px;
+		}
+		
+		article {
+			background-color: #cecece;
+			margin:15px 0 15px 0;
+			padding:15px;
+			/* created a flex parent to vertically center our children */
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+
+		.primary article {
+			width: calc(50% - 15px);
+		}
+
+		.secondary article {
+			width: calc(33.333333% - 15px);
+		}
+	</style>
+
+</head>
+
+<body>
+  
+	<h1>Flex Layout: Three Column</h1>
+	<header>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptas enim quasi dolore earum id aliquam sunt fugit unde voluptatum dignissimos, odio rem tempore architecto aperiam dicta. Ducimus quaerat, quidem.
+	</header>
+
+
+
+	<main class="primary">
+		<article>
+			Article left
+		</article>
+
+		<article>
+			Article right
+		</article>
+
+	</main>
+
+	<section class="secondary">
+		<article>
+			One
+		</article>
+		<article>
+			Two
+		</article>
+		<article>
+			Three
+		</article>
+		
+	</section>
+
+	<footer>
+		Footer
+	</footer>
+</body>
+</html>
