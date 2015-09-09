@@ -146,10 +146,13 @@ footer img{
   float:right;
   display:flex;
   width:70%;
-  text-align:right;
+}
+
+nav a{
   font-weight: 600;
   color:#f9e42e;
   font-size:20px;
+  text-decoration: none;
 }
 
 h1{
