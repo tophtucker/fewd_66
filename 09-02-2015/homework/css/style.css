@@ -1,0 +1,351 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+    list-style:none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     //font-size: 12px;
+     //line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+     margin:auto;
+    background-color:#f0efef;
+    list-style:none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+main{
+/*  max-width: 960px;*/
+  margin: auto;
+}
+
+.hed{
+/*  max-width:960px;*/
+  margin:auto;
+}
+
+header {
+  background-color:#033048;
+  margin:0;
+  padding:0;
+  height:100px;
+}
+
+footer {
+  background-color:#121212;
+  margin:0;
+  height:150px;
+  width:100%;
+  text-align:center;
+}
+
+footer h1{
+  color:#f9e42e;
+  font-size:24px;
+  text-align:center;
+  padding-top:24px;
+  font-weight:800;
+  display:inline-block;
+}
+
+footer p{
+  color:#fff;
+  font-size:9px;
+  text-align:center;
+  padding-top:10px;
+  font-weight:600;
+}
+
+
+footer img{
+  padding:1px;
+  margin-top:10px;
+  text-align:center;
+  vertical-align:center;
+  clear:both;
+  max-width:10%;
+  max-height:10%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+nav {
+  background-color:#f9e42e;
+}
+
+nav a{
+  font-weight: 600;
+  color:#033048;
+  font-size:15px;
+  text-decoration: none;
+  padding:15px;
+  margin-top:15px;
+}
+
+h1{
+  margin:none;
+}
+
+a.two{
+  background-color:#033048;
+  color:#f9e42e;
+  width:150px;
+  padding:10px;
+  text-decoration:none;
+  text-transform:none;
+  display:inline-block;
+  text-align:center;
+  border-radius: 5px;
+  font-size:14px;
+  font-weight:bolder;  
+}
+
+
+
+
+
+.readmore{
+/*  text-align:right;*/
+  border-bottom:solid 1px #606161;
+  padding-bottom:10px;
+  margin-bottom:10px;
+  color:#033048;
+  font-weight:600;
+}
+
+
+
+
+section a{
+  text-decoration:none;
+  color: #033048;
+}
+
+main{
+  width:92%;
+  margin:auto;
+}
+
+
+ul li{
+  margin-left:none;
+  padding-left:none;
+}
+
+aside div{
+  display:flex;
+  flex-direction:column;
+  padding-bottom:20px;
+}
+
+aside h2{
+  color:#033048;
+
+}
+
+
+aside a{
+  color:#033048;
+  font-weight:300;
+  font-size:19px;
+  text-decoration:none;
+}
+aside a.learnmore{
+  color:#033048;
+  font-weight:600;
+  text-decoration: none;
+  font-size:17px;
+}
+
+aside p{
+  color:#033048;
+  font-weight:300;
+  font-size:17px;
+  line-height:1.2em;
+  margin:0;
+
+}
+
+.ad {
+  display:none;
+}
+
+section h1{
+  font-weight:600; 
+  font-size:30px; 
+  color:#033048;
+}
+
+section img{
+  max-width:100%;
+}
+
+section p{
+  color:#606161; 
+  font-size:20px;
+  font-weight:300;
+}
+
+.dropcap{
+  float:left;
+  font-size:65px;
+  font-weight:600;
+  margin:10px 10px -5px 0px;
+  color:#606161;
+}
+
+section.signup {
+  background-color:#f9e42e;
+  height:80px;
+  width:100%;
+  margin-bottom:5px;
+  padding-top:20px;
+  margin:0;
+  text-align:center;
+
+}
+
+div.logo{
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight:800;
+  color:#fff;
+  font-size:40px;
+  margin:0;
+  text-align:center;
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+.hed{
+  max-width:960px;
+  margin:auto;
+}
+
+main{
+  max-width: 960px;
+  margin: auto;
+}
+
+.readmore{
+  text-align:right;
+}
+
+.content {
+    height:1450px;
+    display:flex;
+}
+
+section {
+  width: 700px;
+  padding-right:10px;
+}
+
+main{
+  width:80%;
+  margin:auto;
+}
+
+aside {
+  width:200px;
+  padding-left:10px;
+}
+
+.ad {
+  background-color:#fff;
+  padding:10px;
+  margin-top:30px;
+  height:400px;
+  width:100%;
+}
+
+div.logo{
+  padding-top:24px;
+  text-align:left;
+  float:left;
+  font-weight:800;
+  color:#fff;
+  font-size:30px;
+  margin:0;
+}
+
+
+.navigation{
+  float:right;
+  display:flex;
+}
+
+nav a{
+  font-weight: 600;
+  color:#f9e42e;
+  font-size:15px;
+  text-decoration: none;
+  padding:15px;
+  margin-top:15px;
+}
+
+nav{
+  background-color:#033048;
+}
+
+}
