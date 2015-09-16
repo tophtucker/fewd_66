@@ -125,6 +125,7 @@ footer img{
 
 nav {
   background-color:#f9e42e;
+  width:100%;
 }
 
 nav a{
@@ -134,7 +135,9 @@ nav a{
   text-decoration: none;
   padding:15px;
   margin-top:15px;
+  text-align:center;
 }
+
 
 h1{
   margin:none;
@@ -270,6 +273,12 @@ div.logo{
 
 }
 
+.navigation{
+position:fixed;
+text-align:center;
+}
+
+
 
 
 
@@ -333,6 +342,7 @@ div.logo{
 .navigation{
   float:right;
   display:flex;
+  position:relative;
 }
 
 nav a{
@@ -346,6 +356,7 @@ nav a{
 
 nav{
   background-color:#033048;
+  width:auto;
 }
 
 }
