@@ -76,8 +76,8 @@ main{
 
 header {
   background-color:#033048;
-  margin:0;
-  padding:0;
+  margin-bottom:10px;
+  padding-bottom:10px;
   height:100px;
 }
 
@@ -270,7 +270,6 @@ div.logo{
   font-size:50px;
   margin:0;
   text-align:center;
-
 }
 
 .navigation{
