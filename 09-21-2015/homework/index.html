@@ -41,7 +41,7 @@
 				</p>
 				<div class="slidey1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet veritatis iste quas? Minus, laborum corporis animi dolorum, alias earum officiis, laboriosam dignissimos quidem voluptatem aliquid cumque deserunt enim quia error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet veritatis iste quas? Minus, laborum corporis animi dolorum, alias earum officiis, laboriosam dignissimos quidem voluptatem aliquid cumque deserunt enim quia error.</p></div>
 				<div class="readmore1"><a href="#">Read more ></a></div>
-
+				<div class="readmore1-less"><a href="#">Read less ></a></div>
 				</article>
 				<article>
 				<h1 class="posttitle">
@@ -102,8 +102,11 @@
 
 	function slysly1(event) {
 		event.preventDefault();
-	 	$('.slidey1').slideToggle(500);
+	 	$('.slidey1').slideDown(500);
+	 	$('.readmore1').hide();
+	 	$('.readmore1-less').show();
 	}
+
 
 	$('.readmore2').on('click', slysly2);
 
