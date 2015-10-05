@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+
+<body>
+    <div id="register">
+        <div id="ticket">
+            <h1>Thank You!</h1>
+            <div id="entries"></div>
+            <div class="footer">
+                <div>Total</div>
+                <div id="total">$0.00</div>
+            </div>
+        </div>
+        <form id="entry">
+            <input id="newEntry" autofocus placeholder="How Much?">
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+
+
+
+
+// WRITE CODE HERE
+// To create a cash register
+
+// A SUPER handy function that makes
+// our normal values look pretty
+// when we place them on the page
+function currencyFormat(number) {
+    var currency = parseFloat(number);
+    currency = currency.toFixed(2);
+    currency = '$' + currency;
+    return currency;
+}
+
+// var total = 0;
+
+// $('form').on('submit', updateReceipt);
+
+// function updateReceipt() {
+
+//     event.preventDefault();
+
+//     var newEntry = $('input').val();
+
+//     // Not using var here keeps
+//     // us from using a local variable
+//     total = parseFloat(total) + parseFloat(newEntry);
+
+//     $('#entries').append('<div>' + newEntry + '</div>');
+//     $('#total').html(total);
+// }
+
+        var total = 0;
+
+        $('form').on('submit', updateReceipt);
+
+        function updateReceipt() {
+            event.preventDefault();
+            var newEntry = $('#newEntry').val();
+            total = parseFloat(total) + parseFloat(newEntry);
+            fancyTotal = currencyFormat(total);
+
+            $('#entries').append('<div>' + newEntry + '</div>');
+            $('#total').html(fancyTotal);
+            }
+
+        // function addInput () {
+        //     event.preventDefault();
+        //     // console.log($('#newEntry').val());
+        //     var newNumber = $('#newEntry').val();
+        //     $('#entries').append(newNumber);
+        // }
+
+
+    </script>
+</body>
+
+</html>
