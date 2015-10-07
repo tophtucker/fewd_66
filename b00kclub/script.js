@@ -128,9 +128,25 @@
   };
 })(jQuery);
 
-
-
 jQuery(".iris").xeyes();
+
+
+
+//this is the countdown
+
+//  $('#clock').countdown('2020/10/10', function(event) {   
+
+//     var $this = $(this).html(event.strftime(''
+//     '<span>%w</span> Weeks '
+//     '<span>%d</span> Days '
+//     '<span>%H</span> Hours '
+//     '<span>%M</span> Mins '
+//     '<span>%S</span> Secs'
+//     ));
+// });
+
+// this is the header thing
+
 
 // $(function(){
 //   $('#header_nav').data('size','big');
@@ -158,3 +174,12 @@ jQuery(".iris").xeyes();
 //       }  
 //   }
 // });
+
+
+
+//this is the sliders
+
+  $('.books').slick({
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+  });
