@@ -18,9 +18,7 @@ $('button').on('click', americanize);
 function americanize(event) {
 	event.preventDefault();
 	var tempCelcius = $('input').val();
-	//saves input into a variable
 	console.log(tempCelcius);
-	// run convertTemp fucntion
 	convertTemp(tempCelcius);
 
 }
@@ -39,13 +37,26 @@ function updateHtmlTemp(num) {
 
 function updateColor(num) {
 
-40>num?
-	$('body').css('background-color', '#ffebc9'):
-70>num?
-	$('body').css('background-color', 'orange'):
-	$('body').css('background-color', '#ff6c00')
-}
+// 40>num?
+// 	$('body').css('background-color', '#ffebc9'):
+// 70>num?
+// 	$('body').css('background-color', 'orange'):
+// 	$('body').css('background-color', '#ff6c00')
 
+	if (40>num) {
+		$('body').css('background-color', '#ffebc9')
+	}
+
+	else if (70>num) {
+		$('body').css('background-color', 'orange')
+	}
+
+	else {
+		$('body').css('background-color', '#ff6c00')
+	}
+
+
+}
 
 
 
