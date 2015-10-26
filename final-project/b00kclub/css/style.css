@@ -411,10 +411,31 @@ p {
 }
 
 
+	
+	.members {
+	padding:20px;
+	margin:0;
+	background-color:#ff49e7;
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 100px;
+	color:red;
+	line-height:1.1em;
+	text-align:left;
+	display:block;
+	}
+
+.bio {
+/*	display:none;*/
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 20px;
+	line-height:1.1em;
+	color:#000;
+}
 
 
 
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 650px) {
 /*    .c-d {
         transform: scale(0.5);
         transition: transform(500);
@@ -540,12 +561,12 @@ p {
 
 }
 
-@media screen and (max-width: 1000px) {
-/*	.wrapper {
+/*@media screen and (max-width: 1000px) {
+	.wrapper {
 		transform:scale(0.9,0.9);
-	}*/
+	}
 
-}
+}*/
 /*}*/
 
 
