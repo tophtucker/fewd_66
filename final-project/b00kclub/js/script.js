@@ -1,3 +1,70 @@
+
+//the countdown
+$('#clock').countdown('2015/11/08 13:00:00', function(event) {
+   var $this = $(this).html(event.strftime(''
+     // + '<span>%w</span> weeks '
+     + '<span class="c-d-one">The next meeting is in: <br></span>'
+     + '<span class="c-d-number">%D</span> <span class="c-d-days">Days</span> '
+     + '<br><span>%H</span> Hours '
+     + '<span>%M</span> Minutes '
+     + '<span>%S</span> Seconds'
+     + '<br>On November 08, 2015'
+     ));
+ });
+
+
+//the bulletin form
+
+$('form').on('submit', function() {
+    event.preventDefault();
+
+        // Get the form instance
+
+        //when we submit this form, the event is a form--and it's putting the whole form in an object
+        var $form = $(event.currentTarget);
+
+
+        console.log($('#name-box').val());
+        console.log($('#quote-box').val());
+        console.log($('#page-box').val());
+
+        var nameBox= $('#name-box').val();
+        var quoteBox= $('#quote-box').val();
+        var pageBox= $('#page-box').val();
+
+        if(nameBox !='') {
+
+    //Network > XHR to see what ajax is doing
+    //input type to upload a file is <input type="file">
+       
+
+        //This is the fancy stuff
+        //-------------------------------
+        // Use Ajax to submit form data
+        var url = 'https://docs.google.com/forms/d/1HIRTXsW4LNiugKHa-mElkbMht8uaQaq5o9haCex8kEM/formResponse';
+
+        var data = $form.serialize();
+
+        $.post(url, $form.serialize(), function() {
+
+        }).always(function() {
+            console.warn('Data sent to Google.');
+            // $('body').append('<div>Thank you for submitting a form!</div>');
+        });
+
+
+        //clear the entry areas
+   
+
+      } else {
+        alert('please fill entire form');
+      }
+
+     $( 'form' ).each(function(){
+    this.reset();
+    });
+  });
+
 //supposedly something that makes header shrink on scroll
 
 // $('.iris-left').xeyes();
@@ -183,3 +250,8 @@ jQuery(".iris").xeyes();
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
   });
+
+
+
+
+

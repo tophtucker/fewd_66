@@ -1,0 +1,1 @@
+$("li").on("click",function(){var a=$(this).data("title"),i=$(this).data("href"),t='<div class="popup">';t+="<h3>"+a+"<h3>",t+="<a href="+i+"></a>",t+="</div>",$(this).append(t)});

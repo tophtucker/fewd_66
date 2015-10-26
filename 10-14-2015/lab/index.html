@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+</head>
+<body>
+	<h1>Google Doc Form</h1>
+	<form>
+		<input type="text" class="form-name" placeholder="name" name="entry.164900362">
+		<input type="email" class="form-email" placeholder="email" name="entry.1496857068">
+		<input type="text" class="form-place" placeholder="where are you from?" name="entry.1264090736">
+		<input type="submit">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script> 
+	$('h1').css('color', 'red');
+	$('form').on('submit', function() {
+		event.preventDefault();
+		console.log('aeihalwieu');
+		    // Get the form instance
+
+		    //when we submit this form, the event is a form--and it's putting the whole form in an object
+        var $form = $(event.currentTarget);
+
+
+        console.log($('.form-name').val());
+        console.log($('.form-email').val());
+        console.log($('.form-place').val());
+
+        var formName= $('.form-name').val();
+
+        if(formName !='') {
+
+		//Network > XHR to see what ajax is doing
+		//input type to upload a file is <input type="file">
+       
+
+        //This is the fancy stuff
+        //-------------------------------
+        // Use Ajax to submit form data
+        var url = 'https://docs.google.com/forms/d/1ex__u3YeT_kCVEggrLW1LmgJCT2MBOX4IejYIgh4uho/formResponse';
+
+        var data = $form.serialize();
+
+        $.post(url, $form.serialize(), function() {
+
+        }).always(function() {
+            console.warn('Data sent to Google.');
+            $('body').append('<div>Thank you for submitting a form!</div>');
+        });
+
+    	} else {
+    		alert('please fill entire form');
+    	}
+
+
+	});
+
+
+</script>
+
+</body>
+</html>
+
+
+<!-- 
+action="https://docs.google.com/forms/d/1ex__u3YeT_kCVEggrLW1LmgJCT2MBOX4IejYIgh4uho/formResponse"
+
+
+entry.164900362
+entry.1496857068
+ -->
+
+

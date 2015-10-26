@@ -1,0 +1,40 @@
+body {
+	max-width:700px;
+	margin:auto;
+
+}
+
+
+.listing-card {
+	background-color: gray;
+	display:flex;
+
+	.tag {
+		background-color:rgba(0,0,0,0.5);
+	}
+}
+
+
+$grey: #999999;
+
+header {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+
+	h1 {
+	text-transform: uppercase;
+	}
+
+	nav {
+	text-transform:uppercase;
+
+		a {
+			color:black;
+			font-weight: bold;
+			margin: 0 3px;
+			text-decoration:none;
+		}
+
+	}
+}

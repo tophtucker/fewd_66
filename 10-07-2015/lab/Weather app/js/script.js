@@ -58,7 +58,19 @@ function updateColor(num) {
 
 }
 
+/*
 
+} else if (num<90 && num >80) {
+	$('body').css('background-image', 'url("../images/austin.jpg")');
+}
+
+} else if (num <=90) {
+	$('body').css('background-image', 'url("../images/austin.jpg")');
+}
+
+
+
+*/
 
 // else if (newTemp >= 50){
 // 	$('.body').css('background-color', '#ffd181');

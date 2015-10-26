@@ -3,10 +3,15 @@
 
 
 
+
 /*h1 {
 	color:#000;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 }*/
+
+
+
+
 
 body {
 	margin:0;
@@ -39,19 +44,21 @@ header {
 
 
 .wrapper {
-	display:flex;
+/*	display:flex;*/
 	margin:0;
+	width:100%;
 }
 
 
 .marquee {
-	font-family: 'Bowlby One', Helvetica, sans-serif;
+/*	font-family: 'Bowlby One', Helvetica, sans-serif;
 	font-size: 20px;
 	line-height:1.1em;
 	margin:0;
 	color:#000;
 	padding-bottom:10px;
-	padding-top:10px;
+	padding-top:10px;*/
+	display:none;
 }
 
 header li{
@@ -61,10 +68,6 @@ header li{
 
 header ul{
 	margin:0;
-}
-
-#logo {
-	padding-right:10%;
 }
 
 .logo-first-row {
@@ -93,6 +96,15 @@ header ul{
 }
 
 
+.logo{
+		transform: scale(0.8, 0.8);
+		margin-left:-13%;
+		width:100%;
+		margin-top:-2%;
+
+	}
+
+
 .logo-first-row {
 	position:relative;
 	z-index:-1;
@@ -119,34 +131,42 @@ header ul{
 	margin:0;
 }
 
-.c-d {
+/*.c-d {
 	height:305px;
-	width:50%;
-/*	background-color:yellow;*/
-	text-align:right;
-}
+	width:100%;
+	margin-left:-9%;
+	transform:scale(0.8,0.8);
+}*/
 
+#clock {
+	box-sizing: content-box;
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 27px;
+	height:300px;
+	width:100%;
+	margin-left:-9%;
+	margin-top:-90px;
+	transform:scale(0.8,0.8);
+}
 
 .c-d-one {
 	font-family: 'Bowlby One', Helvetica, sans-serif;
 	font-size: 27px;
-	line-height:1.1em;
-	margin-bottom:-7%;
-	margin-top:-3%;
+/*	line-height:1.1em;*/
+/*	margin-bottom:-7%;*/
 }
 
 .c-d-number {
 	font-family: 'Bowlby One', Helvetica, sans-serif;
 	font-size: 150px;
 	line-height:1.1em;
+	margin-bottom:-500px;
 }
 
 .c-d-days {
 	font-family: 'Bowlby One', Helvetica, sans-serif;
 	font-size: 70px;
 	line-height:1.1em;
-/*	margin-bottom:-10%;*/
-	margin-top:-5%;
 }
 
 .c-d-hr {
@@ -159,11 +179,11 @@ header ul{
 	font-family: 'Bowlby One', Helvetica, sans-serif;
 	font-size: 27px;
 	line-height:1.1em;
+	margin-bottom:30px;
 }
 
 .navigation a {
 	font-family: 'Bowlby One', Helvetica, sans-serif;
-	font-size: 27px;
 	line-height:1.1em;
 	margin:0;
 	color:#000;
@@ -172,8 +192,7 @@ header ul{
 }
 
 .navigation {
-	display:flex;
-	justify-content: space-between;
+	display:none;
 }
 
 .books .slick-slide {
@@ -182,10 +201,15 @@ header ul{
 	margin:0;
 	color:#3e55fc;
 	font-family: 'Bowlby One', Helvetica, sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	line-height:1.1em;
 	text-align:left;
+	width:100%;
 }
+
+/*.books {
+	display:block;
+}*/
 
 /*.books .slick-slide {
 	height:300px;
@@ -193,11 +217,21 @@ header ul{
 }*/
 
 
-/*.slide {
-	display:flex;
-	justify-content: space-between;
-	align-items:flex-end;
-}*/
+.books {
+	display:none;
+}
+
+.books-mobile{
+	display:block;
+	background-color:red;
+	padding:10px;
+	color:#3e55fc;
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 25px;
+	line-height:1.1em;
+	text-align:left;
+	width:100%;
+}
 
 .title {
 	color:#000;
@@ -216,11 +250,11 @@ header ul{
 	color:#000;
 	line-height:1.1em;
 	text-align:left;
-	display:flex;
+	display:block;
 }
 
 .input {
-	width:50%;
+	width:100%;
 }
 
 
@@ -237,10 +271,12 @@ textarea {
 	color:white;
 	background-color:black;
 	text-decoration:none;
+	transform:scale(2,2);
+	margin-left:25px;
 }
 
 #quote-box {
-	height:150px;
+	height:90px;
 	text-align:top;
 	width:90%;
 	margin-bottom:10px;
@@ -248,7 +284,13 @@ textarea {
 
 #page-box {
 	height:25px;
-	width:10%;
+	width:25%;
+	margin-bottom:10px;
+}
+
+#name-box {
+	height:25px;
+	width:25%;
 	margin-bottom:10px;
 }
 
@@ -272,9 +314,11 @@ p {
 }
 
 .posts {
-/*	display:flex;*/
-	width:50%;
-	overflow:auto;
+	margin-top:30px;
+	width:100%;
+	overflow-y:scroll;
+	height:200px;
+	font-size:0.9em;
 }
 
 .name-time{
@@ -363,15 +407,147 @@ p {
 
 
 .downloads {
-	background-color:#bf87ff;
+	background-color:#d26262;
 }
 
 
-@media screen and (max-width: 1200px) {
+
+
+
+@media screen and (min-width: 1000px) {
 /*    .c-d {
         transform: scale(0.5);
         transition: transform(500);
     }
 
-    */
+*/
+
+	.wrapper {
+		display:flex;
+		margin:0;
+	}
+
+	.navigation {
+	display:flex;
+	justify-content: space-between;
+	}
+
+	.navigation a {
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 27px;
+	line-height:1.1em;
+	margin:0;
+	color:#000;
+ 	text-decoration:none;
+ 	padding: 0 20px 0 20px;
+	}
+
+	.marquee {
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 20px;
+	line-height:1.1em;
+	margin:0;
+	color:#000;
+	padding-bottom:10px;
+	padding-top:10px;
+	}
+	
+	.marquee {
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 20px;
+	line-height:1.1em;
+	margin:0;
+	color:#000;
+	padding-bottom:10px;
+	padding-top:10px;
+	display:block;
+	}
+
+	.logo{
+		transform: scale(1, 1);
+		margin:0;
+	}
+
+	.books {
+	display:block;
+	}
+	
+	.books .slide {
+		display:flex; 
+		justify-content: space-between; 
+		align-items:flex-end;
+	}
+	
+	.books .slick-slide {
+	padding:40px;
+	background-color:red;
+	margin:0;
+	color:#3e55fc;
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 30px;
+	line-height:1.1em;
+	text-align:left;
+	}
+
+	.books-mobile{
+	display:none;
+	}
+
+	#clock{
+		height:300px;
+		width:100%;
+		text-align:right;
+		transform:scale(1,1);
+		margin:0;		
+	}
+
+	.c-d-one {
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 27px;
+/*	line-height:1.1em;*/
+/*	margin-bottom:-7%;*/
+	transform:translate(10px, 10px);
+	}
+
+	.bulletin {
+	padding:40px;
+	margin:0;
+	background-color:#378261;
+	font-family: 'Bowlby One', Helvetica, sans-serif;
+	font-size: 20px;
+	color:#000;
+	line-height:1.1em;
+	text-align:left;
+	display:flex;
+	}
+
+	.input {
+	width:50%;
+	}
+
+	.posts {
+	width:50%;
+	overflow-y:scroll;
+	height:450px;
+	}
+	
+	#quote-box {
+	height:150px;
+	text-align:top;
+	width:90%;
+	margin-bottom:10px;
+	}
+
 }
+
+@media screen and (max-width: 1000px) {
+/*	.wrapper {
+		transform:scale(0.9,0.9);
+	}*/
+
+}
+/*}*/
+
+
+
+
