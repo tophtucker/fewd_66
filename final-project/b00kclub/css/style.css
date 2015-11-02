@@ -1,0 +1,569 @@
+* {
+  Box-sizing: Border-box; }
+
+/*h1 {
+	color:#000;
+	font-family: 'Bowlby One SC', Helvetica, sans-serif;
+}*/
+body {
+  margin: 0; }
+
+#head {
+  height: 400px;
+  width: 100%;
+  margin: 0; }
+
+header {
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  background-color: white;
+  /*	display:flex;*/ }
+
+/*.envelope {
+	margin:auto;
+	padding-left:5%;
+	padding-right:5%;
+}*/
+/*
+.prev {
+  content: ">";
+  color: red;
+  font-size: 30px;
+}
+.next{
+  content: "<";
+  color: red;
+  font-size: 30px;
+}
+*/
+.wrapper {
+  /*	display:flex;*/
+  margin: 0;
+  width: 100%; }
+
+.marquee {
+  /*	font-family: 'Bowlby One', Helvetica, sans-serif;
+  	font-size: 20px;
+  	line-height:1.1em;
+  	margin:0;
+  	color:#000;
+  	padding-bottom:10px;
+  	padding-top:10px;*/
+  display: none; }
+
+header li {
+  list-style: none;
+  margin: 0; }
+
+header ul {
+  margin: 0; }
+
+.logo-first-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.eyeball {
+  box-sizing: content-box;
+  width: 110px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+  border: solid 13px #000;
+  margin-left: -10px; }
+
+.iris {
+  box-sizing: content-box;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
+  border: solid 10px #000;
+  font-family: Times; }
+
+.logo {
+  margin-left: -13%;
+  width: 100%;
+  margin-top: -2%; }
+
+.logo-first-row {
+  position: relative;
+  z-index: -1; }
+
+.logo-second-row {
+  margin-top: -130px;
+  margin-left: -10px; }
+
+.logo-first-row h1 {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 150px;
+  text-transform: lowercase;
+  margin: 0; }
+
+.logo-second-row h1 {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 150px;
+  text-transform: lowercase;
+  margin: 0; }
+
+/*.c-d {
+	height:305px;
+	width:100%;
+	margin-left:-9%;
+	transform:scale(0.8,0.8);
+}*/
+#clock {
+  box-sizing: content-box;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 27px;
+  height: 300px;
+  width: 100%;
+  margin-left: -9%;
+  margin-top: -90px; }
+
+.c-d-one {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 27px;
+  /*	line-height:1.1em;*/
+  /*	margin-bottom:-7%;*/ }
+
+.c-d-number {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 150px;
+  line-height: 1.1em;
+  margin-bottom: -500px; }
+
+.c-d-days {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 70px;
+  line-height: 1.1em; }
+
+.c-d-hr {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 27px;
+  line-height: 1.1em; }
+
+.c-d-on {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 27px;
+  line-height: 1.1em;
+  margin-bottom: 30px; }
+
+.navigation a {
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  line-height: 1.1em;
+  margin: 0;
+  color: #000;
+  text-decoration: none;
+  padding: 0 20px 0 20px; }
+
+.navigation a:hover {
+  color: aquamarine; }
+
+.active {
+  background-color: red; }
+
+.navigation {
+  margin-top: 20px;
+  display: none; }
+
+/*#littleguy {
+	height:120px;
+	position:absolute;
+	top:30px;
+}
+
+.littleguy2 {
+	height:150px;
+}
+
+.past-main{
+	background-color:yellow;
+	height:150px;
+	overflow:auto;
+}*/
+.books .slick-slide {
+  background-color: red;
+  margin-top: 160px;
+  color: #3e55fc;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.1em;
+  text-align: left;
+  width: 100%; }
+
+/*.books {
+	display:block;
+}*/
+/*.books .slick-slide {
+	height:300px;
+	background-color:red;
+}*/
+.books {
+  display: none; }
+
+.books-mobile {
+  display: block;
+  background-color: red;
+  padding: 10px;
+  color: #3e55fc;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1.1em;
+  text-align: left;
+  width: 100%; }
+
+.title {
+  color: #000;
+  font-size: 70px;
+  line-height: 0.8em;
+  margin: 0;
+  text-decoration: none; }
+
+.bulletin {
+  padding: 40px;
+  margin: 0;
+  background-color: #378261;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.1em;
+  text-align: left;
+  display: block; }
+
+.input {
+  width: 100%; }
+
+textarea {
+  background-color: #ffbbff;
+  box-shadow: none;
+  border: none;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  font-size: 18px;
+  line-height: 0.9em; }
+
+.submit {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  -webkit-transform: scale(2, 2);
+      -ms-transform: scale(2, 2);
+          transform: scale(2, 2);
+  margin-left: 25px; }
+
+#quote-box {
+  height: 90px;
+  text-align: top;
+  width: 90%;
+  margin-bottom: 10px; }
+
+#page-box {
+  height: 25px;
+  width: 25%;
+  margin-bottom: 10px;
+  background-color: #ffbbff; }
+
+#name-box {
+  height: 25px;
+  width: 25%;
+  margin-bottom: 10px; }
+
+section .col-1 {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5 {
+  width: 20%; }
+
+p {
+  margin: 0;
+  text-align: left; }
+
+.cover {
+  max-width: 200px; }
+
+.posts {
+  margin-top: 30px;
+  width: 100%;
+  overflow-y: scroll;
+  height: 200px;
+  font-size: 0.9em; }
+
+.name-time {
+  float: left;
+  width: 20%;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  font-size: 18px;
+  line-height: 0.9em;
+  clear: both; }
+
+.quotation {
+  float: right;
+  width: 80%; }
+
+.comments {
+  width: 100%;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  font-size: 18px;
+  line-height: 0.9em;
+  margin-bottom: 10px; }
+
+.coolpix {
+  padding-top: 190px;
+  margin: 0;
+  background-color: #3e55fc; }
+
+.coolpix .wallpaper {
+  position: absolute;
+  z-index: 1;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 35px;
+  color: #000;
+  line-height: 5em; }
+
+.pic-1 {
+  background-color: #00ff24;
+  width: 300px;
+  height: 180px;
+  position: relative;
+  box-shadow: 20px 20px 30px #fc00ff;
+  top: 10px;
+  left: 10%;
+  z-index: 1; }
+
+.pic-2 {
+  background-color: #507aa1;
+  width: 500px;
+  position: relative;
+  height: 260px;
+  box-shadow: 20px 20px 30px #fc00ff;
+  top: 30px;
+  left: 50%;
+  z-index: 2; }
+
+.pic-3 {
+  background-color: #a200ff;
+  position: relative;
+  width: 500px;
+  height: 260px;
+  box-shadow: 20px 20px 30px #fc00ff;
+  top: -60px;
+  left: 500px;
+  z-index: 3; }
+
+.pic-4 {
+  background-color: #00ff24;
+  width: 300px;
+  height: 180px;
+  position: relative;
+  box-shadow: 20px 20px 30px #fc00ff;
+  top: -150px;
+  left: 5%;
+  z-index: 4; }
+
+.swags {
+  padding-top: 190px;
+  background-color: #d26262; }
+
+.members {
+  padding-top: 190px;
+  margin: 0;
+  background-color: #ff49e7;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 80px;
+  color: red;
+  line-height: 1.1em;
+  text-align: left;
+  display: block;
+  text-align: center;
+  -webkit-transform: rotate(30);
+      -ms-transform: rotate(30);
+          transform: rotate(30); }
+
+.bio {
+  display: none;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.1em;
+  color: #000;
+  text-align: left;
+  width: 80%;
+  padding-left: 10%; }
+
+.about {
+  height: 400px;
+  background-color: #44ff6c;
+  font-family: 'Bowlby One', Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1.1em;
+  color: #000;
+  padding: 20px; }
+
+.about a {
+  color: #000; }
+
+@media screen and (min-width: 450px) {
+  /*    .c-d {
+          transform: scale(0.5);
+          transition: transform(500);
+      }
+  
+  */
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
+
+  .navigation {
+    position: absolute;
+    left: 550px;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .navigation a {
+    font-family: 'Bowlby One', Helvetica, sans-serif;
+    font-size: 35px;
+    line-height: 1.1em;
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+    padding: 0 20px 0 20px; }
+
+  /*	.navigation-mini {
+  	position:absolute;
+  	left:500px;
+  	display:flex;
+  	flex-direction:column;
+  	}*/
+  /*	.navigation-mini a {
+  	font-family: 'Bowlby One', Helvetica, sans-serif;
+  	font-size: 20px;
+  	line-height:1.1em;
+  	margin:0;
+  	color:#000;
+   	text-decoration:none;
+   	padding: 0 20px 0 20px;
+  	}
+  */
+  /*	.marquee {
+  	font-family: 'Bowlby One', Helvetica, sans-serif;
+  	font-size: 20px;
+  	line-height:1.1em;
+  	margin:0;
+  	color:#000;
+  	padding-bottom:10px;
+  	padding-top:10px;
+  	background-color:white;
+  	}*/
+  .marquee {
+    font-family: 'Bowlby One', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.1em;
+    margin: 0;
+    color: #000;
+    padding-bottom: 10px;
+    display: block; }
+
+  .logo {
+    margin: 0;
+    width: 100%;
+    padding-top: 15px; }
+
+  .books {
+    display: block;
+    padding-top: 200px; }
+
+  .books .slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+
+  .books .slick-slide {
+    padding: 40px;
+    background-color: red;
+    margin: 0;
+    color: #3e55fc;
+    font-family: 'Bowlby One', Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 1.1em;
+    text-align: left; }
+
+  .books-mobile {
+    display: none; }
+
+  #clock {
+    height: 300px;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    padding-right: 20px; }
+
+  .c-d-one {
+    font-family: 'Bowlby One', Helvetica, sans-serif;
+    font-size: 27px;
+    /*	line-height:1.1em;*/
+    /*	margin-bottom:-7%;*/
+    -webkit-transform: translate(10px, 10px);
+        -ms-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); }
+
+  .bulletin {
+    padding: 40px;
+    padding-top: 190px;
+    margin: 0;
+    background-color: #378261;
+    font-family: 'Bowlby One', Helvetica, sans-serif;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.1em;
+    text-align: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .input {
+    width: 50%; }
+
+  .posts {
+    width: 50%;
+    overflow-y: scroll;
+    height: 450px; }
+
+  #quote-box {
+    height: 150px;
+    text-align: top;
+    width: 90%;
+    margin-bottom: 10px; } }
+/*@media screen and (max-width: 1000px) {
+	.wrapper {
+		transform:scale(0.9,0.9);
+	}
+
+}*/
+/*}*/
