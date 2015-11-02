@@ -1,4 +1,104 @@
 
+
+
+// //testing the shrinking nav thing
+// // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+// var mainbottom = $('#littleguy').offset().top + $('#littleguy').height();
+
+// // on scroll, 
+// $(window).on('scroll',function(){
+
+//     // we round here to reduce a little workload
+//     stop = Math.round($(window).scrollTop());
+//     if (stop > mainbottom) {
+//         $('header').addClass('past-main');
+//     } else {
+//         $('header').removeClass('past-main');
+//    }
+
+// });
+
+// //scroll to links
+
+// $('.navigation a').on('click', jump);
+
+// function jump(event) {
+//     event.preventDefault();
+
+//     // GET THE LINK WE CLICKED ON
+//     var $currentTarget = $(event.currentTarget);
+
+//     // GOT THE NAME OF THE ID SPECIFIC TO THE TARGET
+//     var targetId = $currentTarget.attr('href');
+
+//     // MEASURE DISTANCE FROM ID TO TOP OF DOCUMENT
+//     var offsetTop = $(targetId).offset().top;
+
+//     // ANIMATE PAGE TO SCROLLTOP PROPERTY
+//     $('html, body').animate({
+//         scrollTop: offsetTop
+//     }, 1000);
+// }
+
+//nav scroll to links, adding nav class
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+ 
+    $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+ 
+      $('a').each(function () {
+        $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+ 
+      var target = this.hash;
+      $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top+2
+      }, 500, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+      });
+    });
+  });
+ 
+  function onScroll(event){
+    var scrollPosition = $(document).scrollTop();
+    $('.navigation a').each(function () {
+      var currentLink = $(this);
+      var refElement = $(currentLink.attr("href"));
+      if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+        $('.navigation a').removeClass("active");
+        currentLink.addClass("active");
+      }
+      else{
+        currentLink.removeClass("active");
+      }
+    });
+  }
+
+
+
+
+//toggling bios
+
+function slide(event) {
+    event.preventDefault();
+    $('#adam-bio').slideToggle(500);
+  }
+
+  $('#adam').on('click', slide);
+
+function slide2(event) {
+    event.preventDefault();
+    $('#scott-bio').slideToggle(500);
+  }
+
+  $('#scott').on('click', slide2);
+
+
 //the countdown
 $('#clock').countdown('2015/11/08 13:00:00', function(event) {
    var $this = $(this).html(event.strftime(''
@@ -7,10 +107,11 @@ $('#clock').countdown('2015/11/08 13:00:00', function(event) {
      + '<span class="c-d-number">%D</span> <span class="c-d-days">Days</span> '
      + '<br><span>%H</span> Hours '
      + '<span>%M</span> Minutes '
-     + '<span>%S</span> Seconds'
+     + '<span>%S</span> Seconds '
      + '<br>On November 08, 2015'
      ));
  });
+
 
 
 //the bulletin form
@@ -251,6 +352,64 @@ jQuery(".iris").xeyes();
         nextArrow: $('.next'),
   });
 
+
+
+
+//something
+
+$(function(){
+  $('header').data('size','big');
+});
+
+$(window).scroll(function(){
+  if($(document).scrollTop() > 0)
+{
+    if($('header').data('size') == 'big')
+    {
+        $('header').data('size','small');
+        $('header').stop().animate({
+            height:'180px'
+        },200);
+        $('.logo').css({
+            'transform': 'scale(0.6,0.6)',
+            'transform-origin':'top left'
+        }); 
+        $('#clock').css({
+            'transform': 'scale(0.6,0.6)',
+            'transform-origin':'top right'
+        });
+        $('.marquee').css('display', 'none');
+        $('.navigation').css({
+            'transform': 'scale(0.6,0.6)',
+            'transform-origin':'top left'
+        });
+
+    }
+}
+else
+  {
+    if($('header').data('size') == 'small')
+      {
+        $('header').data('size','big');
+        $('header').stop().animate({
+            height:'380px'
+        },200);
+        $('.logo').css({
+            'transform': 'scale(1,1)',
+            'transform-origin':'top left'
+        });
+        $('#clock').css({
+            'transform': 'scale(1,1)',
+            'transform-origin':'top right'
+        });
+        $('.marquee').css('display', 'inline');
+        $('.navigation').css({
+            'transform': 'scale(1,1)',
+            'transform-origin':'top left'
+        });
+      }  
+  }
+});
 
 
 
