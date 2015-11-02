@@ -1,6 +1,5 @@
 
 
-
 // //testing the shrinking nav thing
 // // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
 // var mainbottom = $('#littleguy').offset().top + $('#littleguy').height();
@@ -402,7 +401,10 @@ else
             'transform': 'scale(1,1)',
             'transform-origin':'top right'
         });
-        $('.marquee').css('display', 'inline');
+        $('.marquee').css({
+            'display': 'inline',
+            'padding-top': '20px'
+          });
         $('.navigation').css({
             'transform': 'scale(1,1)',
             'transform-origin':'top left'
@@ -412,5 +414,20 @@ else
 });
 
 
+//merch
 
+
+$('.swag-img').jrumble({
+  x: 10,
+  y: 10,
+  rotation: 4
+});
+
+$('.swag-img').trigger('startRumble');
+$('.swag-img').hover(function(){
+  $(this).trigger('startRumble');
+}, function(){
+  $(this).trigger('stopRumble');
+});
+  
 

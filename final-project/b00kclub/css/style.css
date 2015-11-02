@@ -162,10 +162,7 @@ header ul {
   padding: 0 20px 0 20px; }
 
 .navigation a:hover {
-  color: aquamarine; }
-
-.active {
-  background-color: red; }
+  color: #ff49e7; }
 
 .navigation {
   margin-top: 20px;
@@ -317,7 +314,7 @@ p {
 .coolpix {
   padding-top: 190px;
   margin: 0;
-  background-color: #3e55fc; }
+  background-color: #5949ff; }
 
 .coolpix .wallpaper {
   position: absolute;
@@ -329,8 +326,7 @@ p {
 
 .pic-1 {
   background-color: #00ff24;
-  width: 300px;
-  height: 180px;
+  width: 500px;
   position: relative;
   box-shadow: 20px 20px 30px #fc00ff;
   top: 10px;
@@ -341,17 +337,18 @@ p {
   background-color: #507aa1;
   width: 500px;
   position: relative;
-  height: 260px;
   box-shadow: 20px 20px 30px #fc00ff;
   top: 30px;
   left: 50%;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
 
 .pic-3 {
   background-color: #a200ff;
   position: relative;
-  width: 500px;
-  height: 260px;
+  width: 280px;
   box-shadow: 20px 20px 30px #fc00ff;
   top: -60px;
   left: 500px;
@@ -360,16 +357,58 @@ p {
 .pic-4 {
   background-color: #00ff24;
   width: 300px;
-  height: 180px;
   position: relative;
   box-shadow: 20px 20px 30px #fc00ff;
   top: -150px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   left: 5%;
+  z-index: 4; }
+
+.pic-5 {
+  background-color: #00ff24;
+  width: 500px;
+  position: relative;
+  box-shadow: 20px 20px 30px #fc00ff;
+  top: -300px;
+  left: 40%;
+  z-index: 4; }
+
+.pic-6 {
+  background-color: #00ff24;
+  width: 250px;
+  position: relative;
+  box-shadow: 20px 20px 30px #fc00ff;
+  top: -1000px;
+  left: 20%;
   z-index: 4; }
 
 .swags {
   padding-top: 190px;
-  background-color: #d26262; }
+  background-color: #1c5230;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-bottom: 190px; }
+
+.swag-img {
+  width: 250px;
+  -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+          transform: rotate(25deg);
+  padding: 30px 0 0 30px; }
+
+.swag-img2 {
+  width: 220px;
+  -webkit-transform: rotate(-25deg);
+      -ms-transform: rotate(-25deg);
+          transform: rotate(-25deg); }
 
 .members {
   padding-top: 190px;
@@ -397,13 +436,13 @@ p {
   padding-left: 10%; }
 
 .about {
-  height: 400px;
+  height: 900px;
   background-color: #44ff6c;
   font-family: 'Bowlby One', Helvetica, sans-serif;
   font-size: 25px;
   line-height: 1.1em;
   color: #000;
-  padding: 20px; }
+  padding: 190px; }
 
 .about a {
   color: #000; }
@@ -439,7 +478,7 @@ p {
   .navigation a {
     font-family: 'Bowlby One', Helvetica, sans-serif;
     font-size: 35px;
-    line-height: 1.1em;
+    line-height: 1.15em;
     margin: 0;
     color: #000;
     text-decoration: none;
@@ -473,11 +512,12 @@ p {
   	}*/
   .marquee {
     font-family: 'Bowlby One', Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.1em;
     margin: 0;
     color: #000;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
+    padding-top: 20px;
     display: block; }
 
   .logo {
@@ -486,8 +526,7 @@ p {
     padding-top: 15px; }
 
   .books {
-    display: block;
-    padding-top: 200px; }
+    display: block; }
 
   .books .slide {
     display: -webkit-box;
@@ -510,6 +549,7 @@ p {
     color: #3e55fc;
     font-family: 'Bowlby One', Helvetica, sans-serif;
     font-size: 30px;
+    padding-top: 220px;
     line-height: 1.1em;
     text-align: left; }
 
@@ -560,6 +600,9 @@ p {
     text-align: top;
     width: 90%;
     margin-bottom: 10px; } }
+.active {
+  background-color: red; }
+
 /*@media screen and (max-width: 1000px) {
 	.wrapper {
 		transform:scale(0.9,0.9);
