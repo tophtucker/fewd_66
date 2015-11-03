@@ -61,6 +61,50 @@ $(document).ready(function () {
         $(document).on("scroll", onScroll);
       });
     });
+
+    // SHOW RESULTS OF GOOGLE SPREADSHEETS
+    // This is just taken from the Tabletop.js documentation, which our spreadsheet URL filled in:
+    // https://github.com/jsoma/tabletop
+    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/11ILdO_QO9yVJ6a4mi0_qtdJzPj8YW1dr01Qb8hlN-oQ/pubhtml';
+    Tabletop.init({ key: public_spreadsheet_url, callback: showInfo, simpleSheet: true })
+    // This function gets called when the spreadsheet loads, which takes a second
+    function showInfo(data, tabletop) {
+      // Just helpful for debugging, so you can see the javascript object that the spreadsheet got turned into
+      console.log(data);
+
+      // Create a <div class="post">...</div> for every bulletin post
+      var post = d3.select("#posts")
+        .selectAll(".post")
+        .data(data)
+        .enter()
+        .append("div")
+        .classed("post", true);
+      
+      // In the post div, add the name and timestamp
+      post.append("aside")
+        .classed("name-time", true)
+        .html(function(d) { 
+          // This formats the timestamp, which frankly is always a pain
+          // This might help explain, or not: https://github.com/mbostock/d3/wiki/Time-Formatting#format
+          var formattedTime = d3.time.format("%b. %e, %_I:%M %p")(new Date(d.Timestamp));
+
+          // This builds an HTML string with our variables inserted
+          return "<b>" + d.Name + "</b><br>" + formattedTime;
+        });
+      
+      // In the post div, add the quotation, page number, and notes
+      post.append("aside")
+        .classed("quotation", true)
+        .html(function(d) {
+          // This builds an HTML string with our variables inserted
+          var str = "<p>" + d.Quotation + "</p>";
+          str += '<p class="pagenum">p' + d.Page + "</p>";
+          str += '<p class="comments">' + d.Notes + '</p>';
+          return str;
+        });
+    }
+
+
   });
  
   function onScroll(event){
@@ -416,7 +460,6 @@ else
 
 //merch
 
-
 $('.swag-img').jrumble({
   x: 10,
   y: 10,
@@ -430,4 +473,5 @@ $('.swag-img').hover(function(){
   $(this).trigger('stopRumble');
 });
   
+
 
